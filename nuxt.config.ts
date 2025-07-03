@@ -9,6 +9,18 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/test-utils'
-  ]
+    '@nuxt/test-utils',
+    '@nuxtjs/i18n'
+  ],
+  i18n: {
+    defaultLocale: 'fr-FR',
+    locales: [
+      { code: 'fr-FR', name: 'Français' },
+      { code: 'en-US', name: 'English' }
+    ],
+    strategy: 'prefix_except_default',
+    bundle: {
+      optimizeTranslationDirective: false
+    }
+  }
 })
