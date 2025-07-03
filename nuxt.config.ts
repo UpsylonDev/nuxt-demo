@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -11,7 +13,8 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    'vuetify-nuxt-module'
   ],
   i18n: {
     defaultLocale: 'fr-FR',
@@ -22,6 +25,15 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     bundle: {
       optimizeTranslationDirective: false
+    }
+  },
+  vuetify: { // https://vuetifyjs.com/en/
+    // https://nuxt.vuetifyjs.com/guide/
+    moduleOptions: {
+      /* module specific options */
+    },
+    vuetifyOptions: {
+      /* vuetify options */
     }
   }
 })
