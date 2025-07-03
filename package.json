@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "nudger-nuxt-front-v2",
-=======
-  "name": "nudger-nuxt-front",
->>>>>>> 146c892e9c227d7fe9ed935c503270d8b730e75e
   "private": true,
   "type": "module",
   "scripts": {
