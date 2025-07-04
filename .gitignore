@@ -17,11 +17,12 @@ logs
 .DS_Store
 .fleet
 .idea
+.start
 
-# Local env files
-.env
+# Local env 
 .env.*
-!.env.example
+!.env.examplefiles
+.env
 /package-lock.json
 /.project
 node_modules/
